@@ -1,0 +1,30 @@
+#EXTM3U url-tvg=""
+
+# ─────────────────────────────────────────────────────────────────────
+# From Me To You — personal playlist
+#
+# group-title decides which section an entry lands in:
+#   contains "movie" / "vod"    -> Movies
+#   contains "series" / "show"  -> Series   (or a SxxExx tag in the title)
+#   anything else               -> Live TV
+# Put an entry in several categories with a semicolon: group-title="News;Business"
+#
+# Each entry is TWO lines: the #EXTINF metadata line, then the stream URL
+# right below it (.m3u8 / .mp4 / .ts …). tvg-logo is the logo/poster.
+# ─────────────────────────────────────────────────────────────────────
+
+# ============================ LIVE TV ============================
+#EXTINF:-1 tvg-logo="" group-title="Demo",Test HLS Stream
+http://playertest.longtailvideo.com/adaptive/wowzaid3/playlist.m3u8
+
+# ============================ MOVIES =============================
+#EXTINF:-1 tvg-logo="" group-title="Movies",Big Buck Bunny
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+
+# ============================ SERIES =============================
+# Title format: "Show Name - S01E01 - Episode Title" so episodes group together.
+# #EXTINF:-1 tvg-logo="" group-title="Series",My Show - S01E01 - Pilot
+# https://your-host.com/series/myshow-s01e01.mp4
+
+# ======================= YOUR LINKS BELOW =======================
+# Send me your streams and I'll format them in here.
